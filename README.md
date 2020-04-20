@@ -76,7 +76,7 @@ npm run build
 ## Steps to Create the Sample 
 
 - [Add Assets](#add-assets)
-- [Create Index Page](#create-index-page)
+- [Create Home Page](#create-index-page)
 - [Create Meeting Page](#create-meeting-page)
 - [Create AgoraVideoCall Component](#create-agoravideocall-component)
 
@@ -95,15 +95,15 @@ Asset|Image|Description
 `ag-video-s.png` and `ag-video-active-s.png`|<div style="background-color:grey; text-align:center; padding-top:4px">![ag-video-s.png](src/assets/images/ag-video-s.png)</div><div style="text-align:center; padding-top:4px">![ag-video-active-s.png](src/assets/images/ag-video-active-s.png)</div>|Video camera image, to turn on/off video.
 `ag-oval.png` and `ag-oval-active.png`|<div style="background-color:grey; text-align:center; padding-top:4px">![ag-oval.png](src/assets/images/ag-oval.png)</div><div style="text-align:center; padding-top:4px">![ag-oval-active.png](src/assets/images/ag-oval-active.png)</div>|Circle image (empty and filled-in) to indicate selections.
 
-### Create Index Page
+### Create Home Page
 
-The Index page is managed by the [src/pages/index/index.jsx](src/pages/index/index.jsx) file.
+The Home page is managed by the [src/pages/index/AdvancedOptions.jsx](src/pages/Home/index.jsx) file.
 
-The Index page is comprised of four classes:
+The Home page is comprised of four classes:
 
 Class|Description
 ---|---
-[`Index`](#create-the-index-class)|Main class for the index page. The other classes are used in the layout for this class.
+[`Home`](#create-the-index-class)|Main class for the index page. The other classes are used in the layout for this class.
 [`InputChannel`](#add-the-inputchannel-class)|Text input manager for the channel name.
 [`BaseOptions`](#add-the-baseoptions-class)|Chooser for the type of call.
 [`AdvancedOptions`](#add-the-advancedoptions-class)|Chooser for video transcoding.
@@ -117,7 +117,7 @@ import Validator from '../../utils/Validator'
 import { RESOLUTION_ARR } from '../../utils/Settings'
 import './index.css'
 
-class Index extends React.Component {
+class Home extends React.Component {
 	...
 }
 class InputChannel extends React.Component {
@@ -132,28 +132,28 @@ class AdvancedOptions extends React.Component {
 
 ...
 
-export default Index
+export default Home
 ```
 
-#### Create the Index Class
+#### Create the Home Class
 
-The `Index` class is main class for the index page.
+The `Home` class is main class for the index page.
 
 ![screenshots/index.jpg](screenshots/index.jpg)
 
 ```JavaScript
-class Index extends React.Component {
+class Home extends React.Component {
   
   ...
   
 }
 ```
 
-- [Add the Constructor Method for the Index Class](#add-the-constructor-method-for-the-index-class)
-- [Add Event Listeners for the Index Class](#add-event-listeners-for-the-index-class)
-- [Add the Render Method for the Index Class](#add-the-render-method-for-the-index-class)
+- [Add the Constructor Method for the Home Class](#add-the-constructor-method-for-the-index-class)
+- [Add Event Listeners for the Home Class](#add-event-listeners-for-the-index-class)
+- [Add the Render Method for the Home Class](#add-the-render-method-for-the-index-class)
 
-##### Add the Constructor Method for the Index Class
+##### Add the Constructor Method for the Home Class
 
 The `constructor()` method initializes the `state` properties for the class:
 
@@ -182,7 +182,7 @@ Property|Value|Description
 ```
 
 
-##### Add Event Listeners for the Index Class
+##### Add Event Listeners for the Home Class
 
 The `componentDidMount()` method initializes event listener for keyboard presses.
 
@@ -234,7 +234,7 @@ The `handleJoin()` method initiates joining the channel.
   }
 ```
 
-##### Add the Render Method for the Index Class
+##### Add the Render Method for the Home Class
 
 The `render()` method displays the UI for the index page in the `return()`.
 
@@ -814,7 +814,7 @@ The video profile selection menu is populated by the `options` layout variable. 
 
 ### Create Meeting Page
 
-The Meeting page is managed by the [src/pages/meeting/index.jsx](src/pages/meeting/index.jsx) file.
+The Meeting page is managed by the [src/pages/meeting/AdvancedOptions.jsx](src/pages/Meeting/index.jsx) file.
 
 ![screenshots/meeting.jpg](screenshots/meeting.jpg)
 
@@ -925,7 +925,7 @@ The footer section contains a `Powered By Agora` text, and Agora contact informa
 
 ### Create AgoraVideoCall Component
 
-The AgoraVideoCall component is managed by the [src/components/AgoraVideoCall/index.jsx](src/components/AgoraVideoCall/index.jsx) file.
+The AgoraVideoCall component is managed by the [src/components/AgoraVideoCall/AdvancedOptions.jsx](src/components/AgoraVideoCall/index.jsx) file.
 
 ```
 import React from 'react'

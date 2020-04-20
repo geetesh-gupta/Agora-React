@@ -22,6 +22,7 @@ video {
 .meeting .ag-footer {
   padding: 0 30px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -30,7 +31,7 @@ video {
 }
 
 .meeting .ag-footer :first-child {
-  margin-right: 80px;
+  /*margin-right: 80px;*/
 }
 
 .header-logo {

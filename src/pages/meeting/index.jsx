@@ -27,10 +27,10 @@ class Meeting extends React.Component {
           <div className="ag-header-lead">
             <img
               className="header-logo"
-              src={require("../../assets/images/ag-logo.png")}
+              src={require("../../assets/images/Joynt-Symbol-Logo.png")}
               alt=""
             />
-            <span>AgoraWeb v2.1</span>
+            <span>Joynt Sundays</span>
           </div>
           <div className="ag-header-msg">
             Room:&nbsp;<span id="room-name">{this.channel}</span>
@@ -50,10 +50,13 @@ class Meeting extends React.Component {
           </div>
         </div>
         <div className="ag-footer">
-          <a className="ag-href" href="https://www.agora.io">
-            <span>Powered By Agora</span>
+          <a className="ag-href" href="https://www.joynt.club">
+            <span>Copyright © 2020 Joynt</span>
           </a>
-          <span>Talk to Support: 400 632 6626</span>
+          <div>
+            Contact:
+            <span className="ag-contact"> support@joynt.club</span>
+          </div>
         </div>
       </div>
     );

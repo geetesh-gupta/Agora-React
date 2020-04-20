@@ -113,7 +113,7 @@ class AgoraCanvas extends React.Component {
                     z-index:1;width:calc(100% - 20px);height:calc(100% - 20px)`)
         }
 
-        item.player.resize && item.player.resize()
+        item.player && item.player.resize && item.player.resize()
 
 
       })
